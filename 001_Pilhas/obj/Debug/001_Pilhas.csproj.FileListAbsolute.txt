@@ -1,0 +1,10 @@
+C:\Users\Paulinho\source\repos\001_Pilhas\001_Pilhas\bin\Debug\001_Pilhas.exe.config
+C:\Users\Paulinho\source\repos\001_Pilhas\001_Pilhas\bin\Debug\001_Pilhas.exe
+C:\Users\Paulinho\source\repos\001_Pilhas\001_Pilhas\bin\Debug\001_Pilhas.pdb
+C:\Users\Paulinho\source\repos\001_Pilhas\001_Pilhas\obj\Debug\001_Pilhas.csprojAssemblyReference.cache
+C:\Users\Paulinho\source\repos\001_Pilhas\001_Pilhas\obj\Debug\_001_Pilhas.Exercicios.resources
+C:\Users\Paulinho\source\repos\001_Pilhas\001_Pilhas\obj\Debug\_001_Pilhas.Ex02.resources
+C:\Users\Paulinho\source\repos\001_Pilhas\001_Pilhas\obj\Debug\_001_Pilhas.Properties.Resources.resources
+C:\Users\Paulinho\source\repos\001_Pilhas\001_Pilhas\obj\Debug\001_Pilhas.csproj.GenerateResource.cache
+C:\Users\Paulinho\source\repos\001_Pilhas\001_Pilhas\obj\Debug\001_Pilhas.exe
+C:\Users\Paulinho\source\repos\001_Pilhas\001_Pilhas\obj\Debug\001_Pilhas.pdb
