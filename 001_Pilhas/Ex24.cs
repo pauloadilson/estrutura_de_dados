@@ -141,7 +141,7 @@ namespace _001_Pilhas
                 PreOrdem(T.dir);
             }
         }
-        //Pos ordem
+        //Pos-ordem
         void PosOrdem(tp_no T)
         {
             if (T != null)
@@ -160,6 +160,7 @@ namespace _001_Pilhas
                 PreOrdem(raiz);
             else if (rbPosOrdem.Checked)
                 PosOrdem(raiz);
+            //fim
         }
     }
 }
