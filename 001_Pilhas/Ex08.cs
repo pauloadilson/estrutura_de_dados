@@ -60,10 +60,9 @@ namespace _001_Pilhas
         {
             if (!EstaCheia(fila))
             {
-                int valor;
-                valor = Convert.ToInt32(TBNum.Text);
+                int valor = Convert.ToInt32(TBNum.Text);
                 Insere(ref fila, valor);
-                TBNum.Text = "";
+                TBNum.Clear(); //Clear é melhor que .Text = ""
                 TBNum.Focus();
                 //Evento voltar o foco para o input
             }
@@ -89,7 +88,9 @@ namespace _001_Pilhas
                 if (i == 0)
                 {
                     maiorNum = remove;
+                    //LBNumeros.Items.Add("Maior:" + maiorNum);
                     menorNum = remove;
+                    //LBNumeros.Items.Add("Menor:" + menorNum);
                     soma += remove;
                 }
                 else

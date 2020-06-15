@@ -52,11 +52,12 @@
             this.LValor.AutoSize = true;
             this.LValor.BackColor = System.Drawing.Color.Transparent;
             this.LValor.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LValor.Location = new System.Drawing.Point(15, 71);
+            this.LValor.Location = new System.Drawing.Point(11, 58);
+            this.LValor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LValor.Name = "LValor";
-            this.LValor.Size = new System.Drawing.Size(48, 19);
+            this.LValor.Size = new System.Drawing.Size(52, 19);
             this.LValor.TabIndex = 0;
-            this.LValor.Text = "Avião";
+            this.LValor.Text = "Avião:";
             // 
             // BTInsereFila
             // 
@@ -64,10 +65,10 @@
             this.BTInsereFila.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BTInsereFila.FlatAppearance.BorderSize = 0;
             this.BTInsereFila.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTInsereFila.Location = new System.Drawing.Point(315, 63);
-            this.BTInsereFila.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BTInsereFila.Location = new System.Drawing.Point(236, 51);
+            this.BTInsereFila.Margin = new System.Windows.Forms.Padding(2);
             this.BTInsereFila.Name = "BTInsereFila";
-            this.BTInsereFila.Size = new System.Drawing.Size(212, 39);
+            this.BTInsereFila.Size = new System.Drawing.Size(159, 32);
             this.BTInsereFila.TabIndex = 2;
             this.BTInsereFila.Text = "Insere na fila";
             this.BTInsereFila.UseVisualStyleBackColor = false;
@@ -76,10 +77,10 @@
             // TBAviao
             // 
             this.TBAviao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBAviao.Location = new System.Drawing.Point(113, 69);
-            this.TBAviao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TBAviao.Location = new System.Drawing.Point(85, 56);
+            this.TBAviao.Margin = new System.Windows.Forms.Padding(2);
             this.TBAviao.Name = "TBAviao";
-            this.TBAviao.Size = new System.Drawing.Size(165, 22);
+            this.TBAviao.Size = new System.Drawing.Size(125, 22);
             this.TBAviao.TabIndex = 5;
             this.TBAviao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TBAviao.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TBAviao_KeyDown);
@@ -90,9 +91,9 @@
             this.panel1.Controls.Add(this.LTitle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(856, 46);
+            this.panel1.Size = new System.Drawing.Size(642, 37);
             this.panel1.TabIndex = 7;
             // 
             // LTitle
@@ -100,7 +101,8 @@
             this.LTitle.AutoSize = true;
             this.LTitle.BackColor = System.Drawing.Color.Transparent;
             this.LTitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LTitle.Location = new System.Drawing.Point(9, 12);
+            this.LTitle.Location = new System.Drawing.Point(7, 10);
+            this.LTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LTitle.Name = "LTitle";
             this.LTitle.Size = new System.Drawing.Size(150, 19);
             this.LTitle.TabIndex = 0;
@@ -109,10 +111,10 @@
             // TBQtdeFila
             // 
             this.TBQtdeFila.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBQtdeFila.Location = new System.Drawing.Point(299, 146);
-            this.TBQtdeFila.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TBQtdeFila.Location = new System.Drawing.Point(224, 119);
+            this.TBQtdeFila.Margin = new System.Windows.Forms.Padding(2);
             this.TBQtdeFila.Name = "TBQtdeFila";
-            this.TBQtdeFila.Size = new System.Drawing.Size(227, 22);
+            this.TBQtdeFila.Size = new System.Drawing.Size(171, 22);
             this.TBQtdeFila.TabIndex = 5;
             this.TBQtdeFila.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -122,10 +124,10 @@
             this.BTQtdeFila.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BTQtdeFila.FlatAppearance.BorderSize = 0;
             this.BTQtdeFila.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTQtdeFila.Location = new System.Drawing.Point(20, 139);
-            this.BTQtdeFila.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BTQtdeFila.Location = new System.Drawing.Point(15, 113);
+            this.BTQtdeFila.Margin = new System.Windows.Forms.Padding(2);
             this.BTQtdeFila.Name = "BTQtdeFila";
-            this.BTQtdeFila.Size = new System.Drawing.Size(212, 39);
+            this.BTQtdeFila.Size = new System.Drawing.Size(159, 32);
             this.BTQtdeFila.TabIndex = 2;
             this.BTQtdeFila.Text = "Quantidade na fila";
             this.BTQtdeFila.UseVisualStyleBackColor = false;
@@ -137,10 +139,10 @@
             this.BTAvioesFila.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BTAvioesFila.FlatAppearance.BorderSize = 0;
             this.BTAvioesFila.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTAvioesFila.Location = new System.Drawing.Point(611, 110);
-            this.BTAvioesFila.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BTAvioesFila.Location = new System.Drawing.Point(458, 89);
+            this.BTAvioesFila.Margin = new System.Windows.Forms.Padding(2);
             this.BTAvioesFila.Name = "BTAvioesFila";
-            this.BTAvioesFila.Size = new System.Drawing.Size(196, 39);
+            this.BTAvioesFila.Size = new System.Drawing.Size(147, 32);
             this.BTAvioesFila.TabIndex = 2;
             this.BTAvioesFila.Text = "Aviões na fila";
             this.BTAvioesFila.UseVisualStyleBackColor = false;
@@ -151,15 +153,15 @@
             this.LBAvioesFila.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBAvioesFila.FormattingEnabled = true;
             this.LBAvioesFila.ItemHeight = 16;
-            this.LBAvioesFila.Location = new System.Drawing.Point(597, 165);
-            this.LBAvioesFila.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LBAvioesFila.Location = new System.Drawing.Point(448, 134);
             this.LBAvioesFila.Name = "LBAvioesFila";
-            this.LBAvioesFila.Size = new System.Drawing.Size(221, 132);
+            this.LBAvioesFila.Size = new System.Drawing.Size(167, 100);
             this.LBAvioesFila.TabIndex = 8;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel2.Controls.Add(this.LValor);
             this.panel2.Controls.Add(this.TBAviao);
             this.panel2.Controls.Add(this.BTInsereFila);
@@ -173,9 +175,8 @@
             this.panel2.Controls.Add(this.LBAvioesFila);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(856, 370);
+            this.panel2.Size = new System.Drawing.Size(642, 301);
             this.panel2.TabIndex = 9;
             // 
             // BTAutorizaDec
@@ -184,10 +185,10 @@
             this.BTAutorizaDec.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BTAutorizaDec.FlatAppearance.BorderSize = 0;
             this.BTAutorizaDec.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTAutorizaDec.Location = new System.Drawing.Point(20, 212);
-            this.BTAutorizaDec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BTAutorizaDec.Location = new System.Drawing.Point(15, 172);
+            this.BTAutorizaDec.Margin = new System.Windows.Forms.Padding(2);
             this.BTAutorizaDec.Name = "BTAutorizaDec";
-            this.BTAutorizaDec.Size = new System.Drawing.Size(212, 39);
+            this.BTAutorizaDec.Size = new System.Drawing.Size(159, 32);
             this.BTAutorizaDec.TabIndex = 2;
             this.BTAutorizaDec.Text = "Autoriza decolagem";
             this.BTAutorizaDec.UseVisualStyleBackColor = false;
@@ -196,10 +197,10 @@
             // TBAutorizaDec
             // 
             this.TBAutorizaDec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBAutorizaDec.Location = new System.Drawing.Point(299, 219);
-            this.TBAutorizaDec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TBAutorizaDec.Location = new System.Drawing.Point(224, 178);
+            this.TBAutorizaDec.Margin = new System.Windows.Forms.Padding(2);
             this.TBAutorizaDec.Name = "TBAutorizaDec";
-            this.TBAutorizaDec.Size = new System.Drawing.Size(227, 22);
+            this.TBAutorizaDec.Size = new System.Drawing.Size(171, 22);
             this.TBAutorizaDec.TabIndex = 5;
             this.TBAutorizaDec.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -209,10 +210,10 @@
             this.BTPrimeiroFila.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BTPrimeiroFila.FlatAppearance.BorderSize = 0;
             this.BTPrimeiroFila.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTPrimeiroFila.Location = new System.Drawing.Point(20, 284);
-            this.BTPrimeiroFila.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BTPrimeiroFila.Location = new System.Drawing.Point(15, 231);
+            this.BTPrimeiroFila.Margin = new System.Windows.Forms.Padding(2);
             this.BTPrimeiroFila.Name = "BTPrimeiroFila";
-            this.BTPrimeiroFila.Size = new System.Drawing.Size(212, 39);
+            this.BTPrimeiroFila.Size = new System.Drawing.Size(159, 32);
             this.BTPrimeiroFila.TabIndex = 2;
             this.BTPrimeiroFila.Text = "Primeiro da Fila";
             this.BTPrimeiroFila.UseVisualStyleBackColor = false;
@@ -221,23 +222,23 @@
             // TBPrimeiroFila
             // 
             this.TBPrimeiroFila.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBPrimeiroFila.Location = new System.Drawing.Point(299, 292);
-            this.TBPrimeiroFila.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TBPrimeiroFila.Location = new System.Drawing.Point(224, 237);
+            this.TBPrimeiroFila.Margin = new System.Windows.Forms.Padding(2);
             this.TBPrimeiroFila.Name = "TBPrimeiroFila";
-            this.TBPrimeiroFila.Size = new System.Drawing.Size(227, 22);
+            this.TBPrimeiroFila.Size = new System.Drawing.Size(171, 22);
             this.TBPrimeiroFila.TabIndex = 5;
             this.TBPrimeiroFila.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Ex09B
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 370);
+            this.ClientSize = new System.Drawing.Size(642, 301);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Ex09B";
             this.Text = this.LTitle.Text;
             this.panel1.ResumeLayout(false);

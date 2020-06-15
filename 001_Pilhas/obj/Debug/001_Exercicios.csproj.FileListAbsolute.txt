@@ -362,3 +362,20 @@ C:\Users\Adilson\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dado
 C:\Users\Adilson\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dados\csharp\001_Exercicios\001_Pilhas\obj\Debug\001_Exercicios.csproj.CopyComplete
 C:\Users\Paulinho\source\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.Ex07B.resources
 C:\Users\Paulinho\source\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.Ex09B.resources
+D:\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dados\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.Ex09B.resources
+D:\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dados\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.Ex07B.resources
+D:\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dados\csharp\001_Exercicios\001_Pilhas\obj\Debug\001_Exercicios.csproj.CoreCompileInputs.cache
+C:\Users\Paulinho\source\csharp\001_Exercicios\001_Pilhas\obj\Debug\001_Exercicios.csproj.CoreCompileInputs.cache
+C:\Users\Paulinho\source\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.Ex10.resources
+C:\Users\Paulinho\source\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.Ex11a15.resources
+C:\Users\Paulinho\source\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.ProvaRecursividade.resources
+C:\Users\Paulinho\source\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.ProvaPilha.resources
+C:\Users\Paulinho\source\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.ProvaFila.resources
+D:\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dados\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.Ex10.resources
+D:\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dados\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.Ex11a15.resources
+D:\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dados\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.Ex16.resources
+D:\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dados\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.ProvaFila.resources
+D:\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dados\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.ProvaPilha.resources
+D:\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dados\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.ProvaRecursividade.resources
+D:\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dados\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.Ex17.resources
+D:\OneDrive\FATEC\2º Módulo\03 - 05 - IED001 - Estrutura de Dados\csharp\001_Exercicios\001_Pilhas\obj\Debug\_001_Pilhas.Ex24.resources

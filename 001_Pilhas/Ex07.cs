@@ -61,27 +61,13 @@ namespace _001_Pilhas
             return (f.vetor[++f.inicio]);
         }
 
-        private void BTExibeFilas_Click(object sender, EventArgs e)
-        {
-            //int remove;
-            while (!EstaVazia(filaNMe))
-            {
-                LBNumMenores.Items.Add(Remove(ref filaNMe));
-                /*remove = Remove(ref filaNMe);
-                LBNumMenores.Items.Add(remove); //(Convert.ToString(remove));não precisa converter //listbox é um vetor de string; */
-            }
-            while (!EstaVazia(filaNMa))
-            {
-                LBNumMaiores.Items.Add(Remove(ref filaNMa));
-            }
-        }
 
         private void BTInsereFila_Click(object sender, EventArgs e)
         {
             if (!EstaCheia(fila))
             {
                 int valor;
-                //Inicializa(ref fila);
+                //Inicializa(ref fila); no load
                 valor = Convert.ToInt32(TBValor.Text);
                 Insere(ref fila, valor);
                 TBValor.Clear();
@@ -121,6 +107,20 @@ namespace _001_Pilhas
             if (e.KeyCode == Keys.Enter)
             {
                 BTDivide2Filas_Click(this, new EventArgs());
+            }
+        }
+        private void BTExibeFilas_Click(object sender, EventArgs e)
+        {
+            //int remove;
+            while (!EstaVazia(filaNMe))
+            {
+                LBNumMenores.Items.Add(Remove(ref filaNMe));
+                /*remove = Remove(ref filaNMe);
+                LBNumMenores.Items.Add(remove); //(Convert.ToString(remove));não precisa converter //listbox é um vetor de string; */
+            }
+            while (!EstaVazia(filaNMa))
+            {
+                LBNumMaiores.Items.Add(Remove(ref filaNMa));
             }
         }
 

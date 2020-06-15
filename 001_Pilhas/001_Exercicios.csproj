@@ -94,11 +94,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ex17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex17.Designer.cs">
+      <DependentUpon>Ex17.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ex09B.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ex09B.Designer.cs">
       <DependentUpon>Ex09B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex26.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex26.Designer.cs">
+      <DependentUpon>Ex26.cs</DependentUpon>
     </Compile>
     <Compile Include="Exercicios.cs">
       <SubType>Form</SubType>
@@ -166,9 +178,54 @@
     <Compile Include="Ex07B.Designer.cs">
       <DependentUpon>Ex07B.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ex10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex10.Designer.cs">
+      <DependentUpon>Ex10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex11a15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex11a15.Designer.cs">
+      <DependentUpon>Ex11a15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex16.Designer.cs">
+      <DependentUpon>Ex16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex24.Designer.cs">
+      <DependentUpon>Ex24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProvaRecursividade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvaRecursividade.Designer.cs">
+      <DependentUpon>ProvaRecursividade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProvaPilha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvaPilha.Designer.cs">
+      <DependentUpon>ProvaPilha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProvaFila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvaFila.Designer.cs">
+      <DependentUpon>ProvaFila.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ex17.resx">
+      <DependentUpon>Ex17.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ex02.resx">
       <DependentUpon>Ex02.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +253,18 @@
     <EmbeddedResource Include="Ex09.resx">
       <DependentUpon>Ex09.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ex10.resx">
+      <DependentUpon>Ex10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex11a15.resx">
+      <DependentUpon>Ex11a15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex16.resx">
+      <DependentUpon>Ex16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex26.resx">
+      <DependentUpon>Ex26.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Exercicios.resx">
       <DependentUpon>Exercicios.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ex07B.resx">
       <DependentUpon>Ex07B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex24.resx">
+      <DependentUpon>Ex24.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -215,6 +287,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ProvaFila.resx">
+      <DependentUpon>ProvaFila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProvaPilha.resx">
+      <DependentUpon>ProvaPilha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProvaRecursividade.resx">
+      <DependentUpon>ProvaRecursividade.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </None>

@@ -72,7 +72,7 @@
             this.BTInsereFila.TabIndex = 2;
             this.BTInsereFila.Text = "Insere na fila";
             this.BTInsereFila.UseVisualStyleBackColor = false;
-            this.BTInsereFila.Click += new System.EventHandler(this.BTInsereFila_Click);
+            this.BTInsereFila.Click += new System.EventHandler(this.InsereNaFilaOnClick);
             // 
             // TBAviao
             // 
@@ -83,7 +83,7 @@
             this.TBAviao.Size = new System.Drawing.Size(125, 22);
             this.TBAviao.TabIndex = 5;
             this.TBAviao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TBAviao.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TBAviao_KeyDown);
+            this.TBAviao.KeyDown += new System.Windows.Forms.KeyEventHandler(this.InsereNaFilaOnKeyDown);
             // 
             // panel1
             // 
@@ -131,7 +131,7 @@
             this.BTQtdeFila.TabIndex = 2;
             this.BTQtdeFila.Text = "Quantidade na fila";
             this.BTQtdeFila.UseVisualStyleBackColor = false;
-            this.BTQtdeFila.Click += new System.EventHandler(this.BTQtdeFila_Click);
+            this.BTQtdeFila.Click += new System.EventHandler(this.MostraQuantidadeNaFilaOnClick);
             // 
             // BTAvioesFila
             // 
@@ -146,7 +146,7 @@
             this.BTAvioesFila.TabIndex = 2;
             this.BTAvioesFila.Text = "Aviões na fila";
             this.BTAvioesFila.UseVisualStyleBackColor = false;
-            this.BTAvioesFila.Click += new System.EventHandler(this.BTAvioesFila_Click);
+            this.BTAvioesFila.Click += new System.EventHandler(this.MostraAvioesNaFilaOnClick);
             // 
             // LBAvioesFila
             // 
@@ -191,7 +191,7 @@
             this.BTAutorizaDec.TabIndex = 2;
             this.BTAutorizaDec.Text = "Autoriza decolagem";
             this.BTAutorizaDec.UseVisualStyleBackColor = false;
-            this.BTAutorizaDec.Click += new System.EventHandler(this.BTAutorizaDec_Click);
+            this.BTAutorizaDec.Click += new System.EventHandler(this.AutorizaDecolagemOnClick);
             // 
             // TBAutorizaDec
             // 
@@ -216,7 +216,7 @@
             this.BTPrimeiroFila.TabIndex = 2;
             this.BTPrimeiroFila.Text = "Primeiro da Fila";
             this.BTPrimeiroFila.UseVisualStyleBackColor = false;
-            this.BTPrimeiroFila.Click += new System.EventHandler(this.BTPrimeiroFila_Click);
+            this.BTPrimeiroFila.Click += new System.EventHandler(this.MostraPrimeiroDaFilaOnClick);
             // 
             // TBPrimeiroFila
             // 

@@ -11,13 +11,12 @@ using System.Windows.Forms;
 namespace _001_Pilhas
 {
     public partial class Ex09 : Form
-    {
+    { //criei uma Thread pra abrir esse componente
         public Ex09()
         {
             InitializeComponent();
-            Inicializa(ref fila);
+            Inicializa(ref fila); // carrega a fila junto com o componente
         }
-        // COPIAR A PARTIR DAQUI
         // Organização dos dados
         const int MAX = 50;
         struct tp_fila
@@ -55,16 +54,18 @@ namespace _001_Pilhas
         {
             return (f.vetor[++f.inicio]);
         }
-        private void BTInsereFila_Click(object sender, EventArgs e)
+
+        private void InsereNaFilaOnClick(object sender, EventArgs e)
         {
             if (!EstaCheia(fila))
             {
-                if (TBAviao.Text != "")
+                if (!String.IsNullOrEmpty(TBAviao.Text))
                 {
                     int valor;
                     valor = Convert.ToInt32(TBAviao.Text);
                     Insere(ref fila, valor);
-                    TBAviao.Text = "";
+                    //InformaQuantidadeNaFilaOnClick(sender, e)//(this, new EventArgs());
+                    TBAviao.Clear();
                     TBAviao.Focus(); //Evento voltar o foco para o input
                 }
                 else
@@ -77,30 +78,12 @@ namespace _001_Pilhas
                 MessageBox.Show("Fila cheia!");
             }
         }
-        private void TBAviao_KeyDown(object sender, KeyEventArgs e)
+        private void InsereNaFilaOnKeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-                BTInsereFila_Click(this, new EventArgs());
+                InsereNaFilaOnClick(sender, e);
         }
-        private void BTQtdeFila_Click(object sender, EventArgs e)
-        {
-            TBQtdeFila.Text = "";
-            if (!EstaVazia(fila))
-                TBQtdeFila.Text = Convert.ToString(fila.fim - fila.inicio);
-        }
-        private void BTAutorizaDec_Click(object sender, EventArgs e)
-        {
-            TBAutorizaDec.Text = "";
-            if (!EstaVazia(fila))
-                TBAutorizaDec.Text = Convert.ToString(Remove(ref fila));
-        }
-        private void BTPrimeiroFila_Click(object sender, EventArgs e)
-        {
-            TBPrimeiroFila.Text = "";
-            if (!EstaVazia(fila))
-                TBPrimeiroFila.Text = Convert.ToString(fila.vetor[fila.inicio+1]);
-        }
-        private void BTAvioesFila_Click(object sender, EventArgs e)
+        private void MostraAvioesNaFilaOnClick(object sender, EventArgs e)
         {
             LBAvioesFila.Items.Clear();
             if (!EstaVazia(fila))
@@ -112,9 +95,38 @@ namespace _001_Pilhas
                 }
             }
         }
-
-        
-        // COPIAR ATÉ DAQUI
+        private void MostraQuantidadeNaFilaOnClick(object sender, EventArgs e)
+        {
+            TBQtdeFila.Clear();
+            //TBQtdeFila.Text = Convert.ToString(fila.fim - fila.inicio);
+            int tamanhoFila = tamanho(ref fila);
+            TBQtdeFila.Text = Convert.ToString(tamanhoFila);
+        }
+        int tamanho(ref tp_fila f)
+        {
+            return f.fim - f.inicio;
+        }
+        private void AutorizaDecolagemOnClick(object sender, EventArgs e)
+        {
+            TBAutorizaDec.Clear();
+            if (!EstaVazia(fila))
+                TBAutorizaDec.Text = Convert.ToString(Remove(ref fila));
+            else
+            {
+                MessageBox.Show("Não há aeronaves para decolar!");
+            }
+        }
+        private void MostraPrimeiroDaFilaOnClick(object sender, EventArgs e)
+        {
+            TBPrimeiroFila.Clear();
+            int picoFila = pico(ref fila);
+            if (!EstaVazia(fila))
+                TBPrimeiroFila.Text = Convert.ToString(picoFila);
+        }
+        int pico(ref tp_fila f)
+        {
+            return f.vetor[f.inicio+1]; //inicio começa de -1, mas o indice começa em 0
+        }
     }
 }
 

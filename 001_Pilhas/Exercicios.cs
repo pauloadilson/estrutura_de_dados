@@ -120,5 +120,94 @@ namespace _001_Pilhas
             Application.Run(new Ex09B());
         }
 
+        private void BTEx10_Click(object sender, EventArgs e)
+        {
+            nt = new Thread(Exerc10);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+        }
+        private void Exerc10()
+        {
+            Application.Run(new Ex10());
+        }
+
+        private void BTEx11a15_Click(object sender, EventArgs e)
+        {
+            nt = new Thread(Exerc11a15);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+        }
+        private void Exerc11a15()
+        {
+            Application.Run(new Ex11a15());
+        }
+
+        private void btProvaPilha_Click(object sender, EventArgs e)
+        {
+            nt = new Thread(ProvaDePilha);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+        }
+        private void ProvaDePilha()
+        {
+            Application.Run(new ProvaPilha());
+        }
+
+        private void btProvaFila_Click(object sender, EventArgs e)
+        {
+            nt = new Thread(ProvaDeFila);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+        }
+        private void ProvaDeFila()
+        {
+            Application.Run(new ProvaFila());
+        }
+
+        private void btProvaRecursividade_Click(object sender, EventArgs e)
+        {
+            nt = new Thread(ProvaDeRecursividade);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+        }
+        private void ProvaDeRecursividade()
+        {
+            Application.Run(new ProvaRecursividade());
+        }
+
+        private void btEx16OnClick(object sender, EventArgs e)
+        {
+            nt = new Thread(Exerc16);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+        }
+        private void Exerc16()
+        {
+            Application.Run(new Ex16());
+        }
+
+        private void btEx17_Click(object sender, EventArgs e)
+        {
+            nt = new Thread(Exerc17);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+            
+        }
+        private void Exerc17()
+        {
+            Application.Run(new Ex17());
+        }
+
+        private void btEx24_Click(object sender, EventArgs e)
+        {
+            nt = new Thread(Exerc24);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+
+        }
+        private void Exerc24()
+        {
+            Application.Run(new Ex24());
+        }
     }
 }

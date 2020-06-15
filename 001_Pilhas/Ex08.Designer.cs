@@ -61,7 +61,7 @@
             this.BTInsere.FlatAppearance.BorderSize = 0;
             this.BTInsere.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTInsere.Location = new System.Drawing.Point(231, 51);
-            this.BTInsere.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTInsere.Margin = new System.Windows.Forms.Padding(2);
             this.BTInsere.Name = "BTInsere";
             this.BTInsere.Size = new System.Drawing.Size(110, 32);
             this.BTInsere.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             this.TBNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TBNum.Location = new System.Drawing.Point(86, 56);
-            this.TBNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TBNum.Margin = new System.Windows.Forms.Padding(2);
             this.TBNum.Name = "TBNum";
             this.TBNum.Size = new System.Drawing.Size(125, 22);
             this.TBNum.TabIndex = 1;
@@ -86,7 +86,7 @@
             this.panel1.Controls.Add(this.LTitle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(369, 37);
             this.panel1.TabIndex = 7;
@@ -122,7 +122,7 @@
             this.BTProcessa.FlatAppearance.BorderSize = 0;
             this.BTProcessa.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTProcessa.Location = new System.Drawing.Point(124, 103);
-            this.BTProcessa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTProcessa.Margin = new System.Windows.Forms.Padding(2);
             this.BTProcessa.Name = "BTProcessa";
             this.BTProcessa.Size = new System.Drawing.Size(120, 32);
             this.BTProcessa.TabIndex = 3;
@@ -164,7 +164,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Ex08";
             this.Text = this.LTitle.Text;
             this.panel1.ResumeLayout(false);
