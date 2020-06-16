@@ -151,6 +151,7 @@ namespace _001_Pilhas
                 lbExibeArvore.Items.Add(T.valor);
             }
         }
+        //Exibir
         private void btExibirArvoreBinaria_Click(object sender, EventArgs e)
         {
             lbExibeArvore.Items.Clear();
