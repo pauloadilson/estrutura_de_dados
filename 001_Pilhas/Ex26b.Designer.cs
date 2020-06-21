@@ -1,6 +1,6 @@
 ﻿namespace _001_Pilhas
 {
-    partial class Ex26
+    partial class Ex26b
     {
         /// <summary>
         /// Required designer variable.
@@ -47,7 +47,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.lbColisoes = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.btExibeNumColisoes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tcIncluir.SuspendLayout();
@@ -105,7 +105,7 @@
             this.btGravar.Margin = new System.Windows.Forms.Padding(2);
             this.btGravar.Name = "btGravar";
             this.btGravar.Size = new System.Drawing.Size(97, 32);
-            this.btGravar.TabIndex = 4;
+            this.btGravar.TabIndex = 5;
             this.btGravar.Text = "Gravar";
             this.btGravar.UseVisualStyleBackColor = false;
             this.btGravar.Click += new System.EventHandler(this.btGravar_Click);
@@ -117,7 +117,7 @@
             this.tbEmailIns.Margin = new System.Windows.Forms.Padding(2);
             this.tbEmailIns.Name = "tbEmailIns";
             this.tbEmailIns.Size = new System.Drawing.Size(280, 22);
-            this.tbEmailIns.TabIndex = 3;
+            this.tbEmailIns.TabIndex = 2;
             // 
             // tbNomeIns
             // 
@@ -200,7 +200,7 @@
             this.btProcurar.Margin = new System.Windows.Forms.Padding(2);
             this.btProcurar.Name = "btProcurar";
             this.btProcurar.Size = new System.Drawing.Size(97, 32);
-            this.btProcurar.TabIndex = 2;
+            this.btProcurar.TabIndex = 10;
             this.btProcurar.Text = "Procurar";
             this.btProcurar.UseVisualStyleBackColor = false;
             this.btProcurar.Click += new System.EventHandler(this.btProcurar_Click);
@@ -232,7 +232,7 @@
             this.tbNotaRec.Margin = new System.Windows.Forms.Padding(2);
             this.tbNotaRec.Name = "tbNotaRec";
             this.tbNotaRec.Size = new System.Drawing.Size(140, 22);
-            this.tbNotaRec.TabIndex = 1;
+            this.tbNotaRec.TabIndex = 7;
             // 
             // label1
             // 
@@ -272,7 +272,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.lbColisoes);
+            this.tabPage4.Controls.Add(this.label6);
             this.tabPage4.Controls.Add(this.btExibeNumColisoes);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
@@ -281,15 +281,15 @@
             this.tabPage4.Text = "Informar";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // lbColisoes
+            // label6
             // 
-            this.lbColisoes.AutoSize = true;
-            this.lbColisoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbColisoes.Location = new System.Drawing.Point(204, 109);
-            this.lbColisoes.Name = "lbColisoes";
-            this.lbColisoes.Size = new System.Drawing.Size(70, 76);
-            this.lbColisoes.TabIndex = 2;
-            this.lbColisoes.Text = "0";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(204, 109);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 76);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "0";
             // 
             // btExibeNumColisoes
             // 
@@ -348,6 +348,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lbColisoes;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -209,5 +209,29 @@ namespace _001_Pilhas
         {
             Application.Run(new Ex24());
         }
+
+        private void btEx26_Click(object sender, EventArgs e)
+        {
+            nt = new Thread(Exerc26);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+
+        }
+        private void Exerc26()
+        {
+            Application.Run(new Ex26());
+        }
+
+        private void btEx27_Click(object sender, EventArgs e)
+        {
+            nt = new Thread(Exerc27);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+
+        }
+        private void Exerc27()
+        {
+            Application.Run(new Ex27());
+        }
     }
 }

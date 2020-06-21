@@ -10,80 +10,77 @@ using System.Windows.Forms;
 
 namespace _001_Pilhas
 {
-    public partial class Ex26 : Form
+    public partial class Ex26b : Form
     {
-        public Ex26()
+        public Ex26b()
         {
             InitializeComponent();
-            Inicializa(ref vetor);
+            InicializaEnc(ref vetorEnc);
         }
         // Organização dos dados
         const int N = 5;
-        tp_no[] vetor;
-        tp_no atual;
-        int colisoes = 0;
-        void Inicializa(ref tp_no[] vet)
-        {
-            vet = new tp_no[N];
-            for (int i = 0; i < N; i++)
-                vet[i] = null;
-        }
         int Hash(int chave)
         {
             return (chave % N);
         }
-        tp_no BuscaLinear(int chave)
+        tp_no Busca(int chave)
         {
             int flag = 0;
             int pos = Hash(chave);
-            while (vetor[pos] == null || vetor[pos].nota != chave)
+            while (vetorEnc[pos] == null || vetorEnc[pos].nota != chave)
             {
                 pos++;
                 pos = pos % N;
                 flag++;
                 if (flag == N)
                     return null;
-            } 
-            return vetor[pos];
-        }
-        void InsereLinear(ref tp_no[] vet, tp_no pessoa)
-        {
-            int pos = Hash(pessoa.nota);
-            while (vet[pos] != null)
-            {
-                colisoes++;
-                pos++;
-                pos = pos % N;
             }
-            vet[pos] = pessoa;
+            return vetorEnc[pos];
         }
-        class tp_no 
+
+        class tp_no
         {
             public int nota;
             public string nome, email;
+            public tp_no prox;
+        }
+        tp_no[] vetorEnc;
+        void InicializaEnc(ref tp_no[] vet)
+        {
+            vet = new tp_no[N];
+            for (int i = 0; i < N; i++)
+                vet[i] = null;
+        }
+        void InsereEnc(ref tp_no[] vet, tp_no no)
+        {
+            int pos = Hash(no.nota);
+            if (vet[pos] != null)
+                no.prox = vet[pos];
+            vet[pos] = no;
         }
 
-            private void btGravar_Click(object sender, EventArgs e)
+        private void btGravar_Click(object sender, EventArgs e)
         {
             tp_no aluno = new tp_no();
             aluno.nota = Convert.ToInt32(tbNotaIns.Text);
             aluno.nome = tbNomeIns.Text;
             aluno.email = tbEmailIns.Text;
-            InsereLinear(ref vetor, aluno);
+            aluno.prox = null;
+            InsereEnc(ref vetorEnc, aluno);
             tbNotaIns.Clear();
             tbNomeIns.Clear();
             tbEmailIns.Clear();
             tbNotaIns.Focus();
         }
-        const string msgNaoEncontrado = "Nota não encontrada!";
+        const string msgNaoEncontrado = "Nome não encontrado!";
         private void btProcurar_Click(object sender, EventArgs e)
         {
             int nota = Convert.ToInt32(tbNotaRec.Text);
-            tp_no registro = BuscaLinear(nota);
-            if (registro != null)
+            tp_no atual = Busca(nota);
+            if (atual != null)
             {
-                tbNomeRec.Text = registro.nome;
-                tbEmailRec.Text = registro.email;
+                //tbNomeRec.Text = atual.nome;
+                //tbEmailRec.Text = atual.email;
             }
             else
                 MessageBox.Show(msgNaoEncontrado);
@@ -91,7 +88,7 @@ namespace _001_Pilhas
 
         private void btExibeNumColisoes_Click(object sender, EventArgs e)
         {
-            lbColisoes.Text = Convert.ToString(colisoes);
+
         }
     }
 }

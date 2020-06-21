@@ -53,6 +53,10 @@
             this.btEx17 = new System.Windows.Forms.Button();
             this.btEx24 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.btEx26 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btEx27 = new System.Windows.Forms.Button();
+            this.bt26b = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BTEx02
@@ -339,18 +343,68 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Árvore Binária";
             // 
+            // btEx26
+            // 
+            this.btEx26.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEx26.Location = new System.Drawing.Point(619, 29);
+            this.btEx26.Margin = new System.Windows.Forms.Padding(2);
+            this.btEx26.Name = "btEx26";
+            this.btEx26.Size = new System.Drawing.Size(106, 28);
+            this.btEx26.TabIndex = 2;
+            this.btEx26.Text = "Exercício 26";
+            this.btEx26.UseVisualStyleBackColor = true;
+            this.btEx26.Click += new System.EventHandler(this.btEx26_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(613, 9);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 21);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Espalhamento";
+            // 
+            // btEx27
+            // 
+            this.btEx27.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEx27.Location = new System.Drawing.Point(619, 91);
+            this.btEx27.Margin = new System.Windows.Forms.Padding(2);
+            this.btEx27.Name = "btEx27";
+            this.btEx27.Size = new System.Drawing.Size(106, 28);
+            this.btEx27.TabIndex = 2;
+            this.btEx27.Text = "Exercício 27";
+            this.btEx27.UseVisualStyleBackColor = true;
+            this.btEx27.Click += new System.EventHandler(this.btEx27_Click);
+            // 
+            // bt26b
+            // 
+            this.bt26b.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt26b.Location = new System.Drawing.Point(619, 59);
+            this.bt26b.Margin = new System.Windows.Forms.Padding(2);
+            this.bt26b.Name = "bt26b";
+            this.bt26b.Size = new System.Drawing.Size(106, 28);
+            this.bt26b.TabIndex = 2;
+            this.bt26b.Text = "Exercício 26B";
+            this.bt26b.UseVisualStyleBackColor = true;
+            // 
             // Exercicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 236);
+            this.ClientSize = new System.Drawing.Size(780, 236);
             this.Controls.Add(this.btEx11a15);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btProvaRecursividade);
             this.Controls.Add(this.btProvaFila);
+            this.Controls.Add(this.btEx27);
+            this.Controls.Add(this.bt26b);
+            this.Controls.Add(this.btEx26);
             this.Controls.Add(this.btEx24);
             this.Controls.Add(this.btEx17);
             this.Controls.Add(this.btEx16);
@@ -403,6 +457,10 @@
         private System.Windows.Forms.Button btEx17;
         private System.Windows.Forms.Button btEx24;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btEx26;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btEx27;
+        private System.Windows.Forms.Button bt26b;
     }
 }
 
