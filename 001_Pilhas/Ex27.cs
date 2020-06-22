@@ -26,7 +26,7 @@ namespace _001_Pilhas
         {
             return (chave % N);
         }
-        class tp_reg
+        struct tp_reg
         {
             public int idade;
             public string nome, sexo;
@@ -35,10 +35,11 @@ namespace _001_Pilhas
         {
             vet = new tp_reg[N];
             for (int i = 0; i < N; i++)
-                vet[i] = null;
+                vet[i].idade = 0;
         }
         ///sem tratamento
         tp_reg[] vetorST;
+        tp_reg inicioST;
         //grava
         private void btGravarST_Click(object sender, EventArgs e)
         {
@@ -60,29 +61,29 @@ namespace _001_Pilhas
         //consulta
         private void btConsultarST_Click(object sender, EventArgs e)
         {
-            int nota = Convert.ToInt32(tbIdadeST.Text);
-            tp_reg registro = BuscaLinearST(nota);
-            if (registro != null)
+            int idade = Convert.ToInt32(tbIdadeST.Text);
+            int pos = BuscaLinearST(idade);
+            if (vetorST[pos].idade != 0 && pos >= 0)
             {
-                tbNomeST.Text = registro.nome;
-                cbSexoST.SelectedItem = registro.sexo;
+                tbNomeST.Text = vetorST[pos].nome;
+                cbSexoST.SelectedItem = vetorST[pos].sexo;
             }
             else
                 MessageBox.Show(msgNaoEncontrado);
         }
-        tp_reg BuscaLinearST(int chave)
+        int BuscaLinearST(int chave)
         {
             int flag = 0;
             int pos = Hash(chave);
-            while (vetorST[pos] == null || vetorST[pos].idade != chave)
+            while (vetorST[pos].idade == 0 || vetorST[pos].idade != chave)
             {
                 pos++;
                 pos = pos % N;
                 flag++;
                 if (flag == N)
-                    return null;
+                    return -1;
             }
-            return vetorST[pos];
+            return pos;
         }
         //exibir
         private void btExibirST_Click_1(object sender, EventArgs e)
@@ -94,7 +95,7 @@ namespace _001_Pilhas
         {
             foreach (tp_reg pessoa in vetorST)
             {
-                if (pessoa != null)
+                if (pessoa.idade != 0)
                 {
                     lbRelatorioST.Items.Add($" Idade: {pessoa.idade} anos.");
                     lbRelatorioST.Items.Add($" Nome: {pessoa.nome}.");
@@ -122,7 +123,7 @@ namespace _001_Pilhas
         void InsereTratamentoLinear(ref tp_reg[] vet, tp_reg pessoa)
         {
             int pos = Hash(pessoa.idade);
-            while (vet[pos] != null)
+            while (vet[pos].idade != 0)
             {
                 pos++;
                 pos = pos % N;
@@ -133,29 +134,29 @@ namespace _001_Pilhas
         //consultar
         private void btConsultarCTL_Click(object sender, EventArgs e)
         {
-            int nota = Convert.ToInt32(tbIdadeCTL.Text);
-            tp_reg registro = BuscaLinear(nota);
-            if (registro != null)
+            int idade = Convert.ToInt32(tbIdadeCTL.Text);
+            int pos = BuscaLinear(idade);
+            if (vetorCTL[pos].idade != 0 && pos >= 0)
             {
-                tbNomeCTL.Text = registro.nome;
-                cbSexoCTL.SelectedItem = registro.sexo;
+                tbNomeCTL.Text = vetorCTL[pos].nome;
+                cbSexoCTL.SelectedItem = vetorCTL[pos].sexo;
             }
             else
                 MessageBox.Show(msgNaoEncontrado);
         }
-        tp_reg BuscaLinear(int chave)
+        int BuscaLinear(int chave)
         {
             int flag = 0;
             int pos = Hash(chave);
-            while (vetorCTL[pos] == null || vetorCTL[pos].idade != chave)
+            while (vetorCTL[pos].idade == 0 || vetorCTL[pos].idade != chave)
             {
                 pos++;
                 pos = pos % N;
                 flag++;
                 if (flag == N)
-                    return null;
+                    return -1;
             }
-            return vetorCTL[pos];
+            return pos;
         }
         //exibir
         private void btExibirCTL_Click(object sender, EventArgs e)
@@ -167,7 +168,7 @@ namespace _001_Pilhas
         {
             foreach (tp_reg pessoa in vetorCTL)
             {
-                if (pessoa != null)
+                if (pessoa.idade != 0)
                 {
                     lbResultadoCTL.Items.Add($" Idade: {pessoa.idade} anos.");
                     lbResultadoCTL.Items.Add($" Nome: {pessoa.nome}.");
