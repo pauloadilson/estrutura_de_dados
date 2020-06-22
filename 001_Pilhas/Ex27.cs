@@ -19,7 +19,7 @@ namespace _001_Pilhas
             Inicializa(ref vetorCTL);
             InicializaCTLE(ref vetorCTLE);
         }
-        const string msgNaoEncontrado = "Nome não encontrado!";
+        const string msgNaoEncontrado = "Idade não encontrada!";
         const int N = 5;
         // Organização dos dados
         int Hash(int chave)
@@ -177,7 +177,7 @@ namespace _001_Pilhas
                 }
             }
         }
-        ///com tratamento linear
+        ///com tratamento lista encadeada
         class tp_reg_enc
         {
             public int idade;
@@ -185,7 +185,7 @@ namespace _001_Pilhas
             public tp_reg_enc prox;
         }
         tp_reg_enc[] vetorCTLE;
-        tp_reg_enc atual;
+        tp_reg_enc atual, anterior;
 
         void InicializaCTLE(ref tp_reg_enc[] vet)
         {
@@ -218,13 +218,61 @@ namespace _001_Pilhas
         private void btConsultarCTLE_Click(object sender, EventArgs e)
         {
 
+            int nota = Convert.ToInt32(tbIdadeCTLE.Text);
+            string nome = tbNomeCTLE.Text;
+            BuscaListaEncadeada(nota, nome);
+            if (atual != null)
+            {
+                cbSexoCTLE.SelectedItem = atual.sexo;
+            }
+            else
+                MessageBox.Show(msgNaoEncontrado);
         }
+        void BuscaListaEncadeada(int idade, string nome)
+        {
+            anterior = null;
+            foreach (tp_reg_enc pessoa in vetorCTLE)
+            {
+                atual = pessoa;
+                if (atual.idade != idade)
+                    continue;
+                while (atual != null && atual.nome != nome) 
+                {
+                    anterior = atual;
+                    atual = atual.prox;
+                }
+                if (atual!= null && atual.nome == nome)
+                    break;
+            }
+        }
+        //alterar
+        private void btAlterarCTLE_Click(object sender, EventArgs e)
+        {
+            //tp_no resultadoConsulta = Consulta(ref inicio, tbNomeConsultaAlterar.Text);
+            int nota = Convert.ToInt32(tbIdadeCTLE.Text);
+            string nome = tbNomeCTLE.Text;
+            BuscaListaEncadeada(nota,nome);
+            if (atual != null)
+            {
+                atual.nome = tbNomeCTLE.Text;
+                atual.sexo = cbSexoCTLE.SelectedItem.ToString();
+            }
+            else
+                MessageBox.Show(msgNaoEncontrado);
+            tbIdadeCTLE.Clear();
+            tbNomeCTLE.Clear();
+            cbSexoCTLE.SelectedIndex = -1;
+            tbIdadeCTLE.Focus();
+        }
+
         //exibir
         private void btExibirCTLE_Click(object sender, EventArgs e)
         {
             lbResultadoCTLE.Items.Clear();
             ExibirCTLE();
         }
+
+
         void ExibirCTLE()
         {
             foreach (tp_reg_enc pessoa in vetorCTLE)
@@ -232,9 +280,9 @@ namespace _001_Pilhas
                 atual = pessoa;
                 while (atual != null)
                 {
-                    lbResultadoCTLE.Items.Add($" Idade: {pessoa.idade} anos.");
-                    lbResultadoCTLE.Items.Add($" Nome: {pessoa.nome}.");
-                    lbResultadoCTLE.Items.Add($" Sexo: {pessoa.sexo}.");
+                    lbResultadoCTLE.Items.Add($" Idade: {atual.idade} anos.");
+                    lbResultadoCTLE.Items.Add($" Nome: {atual.nome}.");
+                    lbResultadoCTLE.Items.Add($" Sexo: {atual.sexo}.");
                     lbResultadoCTLE.Items.Add(" ");
                     atual = atual.prox;
                 }
