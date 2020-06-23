@@ -19,7 +19,7 @@ namespace _001_Pilhas
             Inicializa(ref vetorCTL);
             InicializaCTLE(ref vetorCTLE);
         }
-        const string msgNaoEncontrado = "Idade não encontrada!";
+        const string msgNaoEncontrado = "Registro não encontrado!";
         const int N = 5;
         // Organização dos dados
         int Hash(int chave)
@@ -39,8 +39,7 @@ namespace _001_Pilhas
         }
         ///sem tratamento
         tp_reg[] vetorST;
-        tp_reg inicioST;
-        //grava
+        //grava & altera
         private void btGravarST_Click(object sender, EventArgs e)
         {
             tp_reg pessoa = new tp_reg();
@@ -207,7 +206,6 @@ namespace _001_Pilhas
         }
         tp_reg_enc[] vetorCTLE;
         tp_reg_enc atual, anterior;
-
         void InicializaCTLE(ref tp_reg_enc[] vet)
         {
             vet = new tp_reg_enc[N];
@@ -286,14 +284,12 @@ namespace _001_Pilhas
             cbSexoCTLE.SelectedIndex = -1;
             tbIdadeCTLE.Focus();
         }
-
         //exibir
         private void btExibirCTLE_Click(object sender, EventArgs e)
         {
             lbResultadoCTLE.Items.Clear();
             ExibirCTLE();
         }
-
         void ExibirCTLE()
         {
             foreach (tp_reg_enc pessoa in vetorCTLE)

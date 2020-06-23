@@ -112,12 +112,6 @@
     <Compile Include="Ex26.Designer.cs">
       <DependentUpon>Ex26.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ex26b.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ex26b.Designer.cs">
-      <DependentUpon>Ex26b.cs</DependentUpon>
-    </Compile>
     <Compile Include="Ex27.cs">
       <SubType>Form</SubType>
     </Compile>
