@@ -7,3 +7,4 @@ packages
 001_Pilhas/bin
 001_Pilhas/obj
 .editorconfig
+*.Designer.cs
