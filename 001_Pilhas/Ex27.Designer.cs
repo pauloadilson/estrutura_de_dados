@@ -39,6 +39,7 @@
             this.cbSexoST = new System.Windows.Forms.ComboBox();
             this.LRecebeDecimal = new System.Windows.Forms.Label();
             this.btConsultarST = new System.Windows.Forms.Button();
+            this.btAlterarST = new System.Windows.Forms.Button();
             this.btGravarST = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@
             this.btExibirCTL = new System.Windows.Forms.Button();
             this.lbResultadoCTL = new System.Windows.Forms.ListBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btAlterarCTL = new System.Windows.Forms.Button();
             this.tbIdadeCTL = new System.Windows.Forms.TextBox();
             this.cbSexoCTL = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -61,6 +63,7 @@
             this.btExibirCTLE = new System.Windows.Forms.Button();
             this.lbResultadoCTLE = new System.Windows.Forms.ListBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btAlterarCTLE = new System.Windows.Forms.Button();
             this.tbIdadeCTLE = new System.Windows.Forms.TextBox();
             this.cbSexoCTLE = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -69,7 +72,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tbNomeCTLE = new System.Windows.Forms.TextBox();
-            this.btAlterarCTLE = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tcIncluir.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -94,9 +96,9 @@
             // 
             // tcIncluir
             // 
-            this.tcIncluir.Controls.Add(this.tabPage1);
             this.tcIncluir.Controls.Add(this.tabPage2);
             this.tcIncluir.Controls.Add(this.tabPage4);
+            this.tcIncluir.Controls.Add(this.tabPage1);
             this.tcIncluir.Location = new System.Drawing.Point(3, 3);
             this.tcIncluir.Multiline = true;
             this.tcIncluir.Name = "tcIncluir";
@@ -159,7 +161,7 @@
             this.groupBox1.Controls.Add(this.cbSexoST);
             this.groupBox1.Controls.Add(this.LRecebeDecimal);
             this.groupBox1.Controls.Add(this.btConsultarST);
-            this.groupBox1.Controls.Add(this.btAlterarCTLE);
+            this.groupBox1.Controls.Add(this.btAlterarST);
             this.groupBox1.Controls.Add(this.btGravarST);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
@@ -174,7 +176,7 @@
             // tbIdadeST
             // 
             this.tbIdadeST.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIdadeST.Location = new System.Drawing.Point(81, 33);
+            this.tbIdadeST.Location = new System.Drawing.Point(81, 83);
             this.tbIdadeST.Margin = new System.Windows.Forms.Padding(2);
             this.tbIdadeST.Name = "tbIdadeST";
             this.tbIdadeST.Size = new System.Drawing.Size(63, 22);
@@ -190,7 +192,7 @@
             "Outro"});
             this.cbSexoST.Location = new System.Drawing.Point(81, 133);
             this.cbSexoST.Name = "cbSexoST";
-            this.cbSexoST.Size = new System.Drawing.Size(164, 21);
+            this.cbSexoST.Size = new System.Drawing.Size(198, 21);
             this.cbSexoST.TabIndex = 3;
             // 
             // LRecebeDecimal
@@ -198,7 +200,7 @@
             this.LRecebeDecimal.AutoSize = true;
             this.LRecebeDecimal.BackColor = System.Drawing.Color.Transparent;
             this.LRecebeDecimal.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LRecebeDecimal.Location = new System.Drawing.Point(7, 84);
+            this.LRecebeDecimal.Location = new System.Drawing.Point(7, 34);
             this.LRecebeDecimal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LRecebeDecimal.Name = "LRecebeDecimal";
             this.LRecebeDecimal.Size = new System.Drawing.Size(54, 19);
@@ -211,7 +213,7 @@
             this.btConsultarST.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btConsultarST.FlatAppearance.BorderSize = 0;
             this.btConsultarST.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsultarST.Location = new System.Drawing.Point(182, 27);
+            this.btConsultarST.Location = new System.Drawing.Point(182, 77);
             this.btConsultarST.Margin = new System.Windows.Forms.Padding(2);
             this.btConsultarST.Name = "btConsultarST";
             this.btConsultarST.Size = new System.Drawing.Size(97, 32);
@@ -219,6 +221,21 @@
             this.btConsultarST.Text = "Consultar";
             this.btConsultarST.UseVisualStyleBackColor = false;
             this.btConsultarST.Click += new System.EventHandler(this.btConsultarST_Click);
+            // 
+            // btAlterarST
+            // 
+            this.btAlterarST.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btAlterarST.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btAlterarST.FlatAppearance.BorderSize = 0;
+            this.btAlterarST.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAlterarST.Location = new System.Drawing.Point(182, 182);
+            this.btAlterarST.Margin = new System.Windows.Forms.Padding(2);
+            this.btAlterarST.Name = "btAlterarST";
+            this.btAlterarST.Size = new System.Drawing.Size(97, 32);
+            this.btAlterarST.TabIndex = 4;
+            this.btAlterarST.Text = "Alterar";
+            this.btAlterarST.UseVisualStyleBackColor = false;
+            this.btAlterarST.Click += new System.EventHandler(this.btGravarST_Click);
             // 
             // btGravarST
             // 
@@ -240,12 +257,12 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 34);
+            this.label2.Location = new System.Drawing.Point(6, 84);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 19);
+            this.label2.Size = new System.Drawing.Size(61, 19);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Idade:";
+            this.label2.Text = "Idade:*";
             // 
             // label3
             // 
@@ -262,10 +279,10 @@
             // tbNomeST
             // 
             this.tbNomeST.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNomeST.Location = new System.Drawing.Point(81, 83);
+            this.tbNomeST.Location = new System.Drawing.Point(81, 33);
             this.tbNomeST.Margin = new System.Windows.Forms.Padding(2);
             this.tbNomeST.Name = "tbNomeST";
-            this.tbNomeST.Size = new System.Drawing.Size(188, 22);
+            this.tbNomeST.Size = new System.Drawing.Size(198, 22);
             this.tbNomeST.TabIndex = 2;
             // 
             // tabPage2
@@ -318,6 +335,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.btAlterarCTL);
             this.groupBox4.Controls.Add(this.tbIdadeCTL);
             this.groupBox4.Controls.Add(this.cbSexoCTL);
             this.groupBox4.Controls.Add(this.label1);
@@ -333,10 +351,25 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Inserir/Consultar/Alterar";
             // 
+            // btAlterarCTL
+            // 
+            this.btAlterarCTL.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btAlterarCTL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btAlterarCTL.FlatAppearance.BorderSize = 0;
+            this.btAlterarCTL.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAlterarCTL.Location = new System.Drawing.Point(182, 182);
+            this.btAlterarCTL.Margin = new System.Windows.Forms.Padding(2);
+            this.btAlterarCTL.Name = "btAlterarCTL";
+            this.btAlterarCTL.Size = new System.Drawing.Size(97, 32);
+            this.btAlterarCTL.TabIndex = 14;
+            this.btAlterarCTL.Text = "Alterar";
+            this.btAlterarCTL.UseVisualStyleBackColor = false;
+            this.btAlterarCTL.Click += new System.EventHandler(this.btAlterarCTL_Click);
+            // 
             // tbIdadeCTL
             // 
             this.tbIdadeCTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIdadeCTL.Location = new System.Drawing.Point(81, 33);
+            this.tbIdadeCTL.Location = new System.Drawing.Point(81, 83);
             this.tbIdadeCTL.Margin = new System.Windows.Forms.Padding(2);
             this.tbIdadeCTL.Name = "tbIdadeCTL";
             this.tbIdadeCTL.Size = new System.Drawing.Size(63, 22);
@@ -352,7 +385,7 @@
             "Outro"});
             this.cbSexoCTL.Location = new System.Drawing.Point(81, 133);
             this.cbSexoCTL.Name = "cbSexoCTL";
-            this.cbSexoCTL.Size = new System.Drawing.Size(164, 21);
+            this.cbSexoCTL.Size = new System.Drawing.Size(198, 21);
             this.cbSexoCTL.TabIndex = 3;
             // 
             // label1
@@ -360,12 +393,12 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 84);
+            this.label1.Location = new System.Drawing.Point(7, 34);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 19);
+            this.label1.Size = new System.Drawing.Size(60, 19);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Nome:";
+            this.label1.Text = "Nome:*";
             // 
             // btConsultarCTL
             // 
@@ -373,7 +406,7 @@
             this.btConsultarCTL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btConsultarCTL.FlatAppearance.BorderSize = 0;
             this.btConsultarCTL.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsultarCTL.Location = new System.Drawing.Point(172, 27);
+            this.btConsultarCTL.Location = new System.Drawing.Point(182, 77);
             this.btConsultarCTL.Margin = new System.Windows.Forms.Padding(2);
             this.btConsultarCTL.Name = "btConsultarCTL";
             this.btConsultarCTL.Size = new System.Drawing.Size(97, 32);
@@ -402,12 +435,12 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 34);
+            this.label4.Location = new System.Drawing.Point(6, 84);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 19);
+            this.label4.Size = new System.Drawing.Size(61, 19);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Idade:";
+            this.label4.Text = "Idade:*";
             // 
             // label5
             // 
@@ -424,10 +457,10 @@
             // tbNomeCTL
             // 
             this.tbNomeCTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNomeCTL.Location = new System.Drawing.Point(81, 83);
+            this.tbNomeCTL.Location = new System.Drawing.Point(81, 33);
             this.tbNomeCTL.Margin = new System.Windows.Forms.Padding(2);
             this.tbNomeCTL.Name = "tbNomeCTL";
-            this.tbNomeCTL.Size = new System.Drawing.Size(188, 22);
+            this.tbNomeCTL.Size = new System.Drawing.Size(198, 22);
             this.tbNomeCTL.TabIndex = 2;
             // 
             // tabPage4
@@ -479,6 +512,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.btAlterarCTLE);
             this.groupBox6.Controls.Add(this.tbIdadeCTLE);
             this.groupBox6.Controls.Add(this.cbSexoCTLE);
             this.groupBox6.Controls.Add(this.label6);
@@ -494,10 +528,25 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Inserir/Consultar/Alterar";
             // 
+            // btAlterarCTLE
+            // 
+            this.btAlterarCTLE.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btAlterarCTLE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btAlterarCTLE.FlatAppearance.BorderSize = 0;
+            this.btAlterarCTLE.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAlterarCTLE.Location = new System.Drawing.Point(182, 182);
+            this.btAlterarCTLE.Margin = new System.Windows.Forms.Padding(2);
+            this.btAlterarCTLE.Name = "btAlterarCTLE";
+            this.btAlterarCTLE.Size = new System.Drawing.Size(97, 32);
+            this.btAlterarCTLE.TabIndex = 14;
+            this.btAlterarCTLE.Text = "Alterar";
+            this.btAlterarCTLE.UseVisualStyleBackColor = false;
+            this.btAlterarCTLE.Click += new System.EventHandler(this.btAlterarCTLE_Click);
+            // 
             // tbIdadeCTLE
             // 
             this.tbIdadeCTLE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIdadeCTLE.Location = new System.Drawing.Point(81, 33);
+            this.tbIdadeCTLE.Location = new System.Drawing.Point(81, 83);
             this.tbIdadeCTLE.Margin = new System.Windows.Forms.Padding(2);
             this.tbIdadeCTLE.Name = "tbIdadeCTLE";
             this.tbIdadeCTLE.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -514,7 +563,7 @@
             "Outro"});
             this.cbSexoCTLE.Location = new System.Drawing.Point(81, 133);
             this.cbSexoCTLE.Name = "cbSexoCTLE";
-            this.cbSexoCTLE.Size = new System.Drawing.Size(164, 21);
+            this.cbSexoCTLE.Size = new System.Drawing.Size(198, 21);
             this.cbSexoCTLE.TabIndex = 3;
             // 
             // label6
@@ -522,12 +571,12 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(7, 84);
+            this.label6.Location = new System.Drawing.Point(7, 34);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 19);
+            this.label6.Size = new System.Drawing.Size(60, 19);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Nome:";
+            this.label6.Text = "Nome:*";
             // 
             // btConsultarCTLE
             // 
@@ -535,7 +584,7 @@
             this.btConsultarCTLE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btConsultarCTLE.FlatAppearance.BorderSize = 0;
             this.btConsultarCTLE.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsultarCTLE.Location = new System.Drawing.Point(172, 27);
+            this.btConsultarCTLE.Location = new System.Drawing.Point(182, 77);
             this.btConsultarCTLE.Margin = new System.Windows.Forms.Padding(2);
             this.btConsultarCTLE.Name = "btConsultarCTLE";
             this.btConsultarCTLE.Size = new System.Drawing.Size(97, 32);
@@ -564,12 +613,12 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 34);
+            this.label7.Location = new System.Drawing.Point(6, 84);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 19);
+            this.label7.Size = new System.Drawing.Size(61, 19);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Idade:";
+            this.label7.Text = "Idade:*";
             // 
             // label8
             // 
@@ -586,26 +635,11 @@
             // tbNomeCTLE
             // 
             this.tbNomeCTLE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNomeCTLE.Location = new System.Drawing.Point(81, 83);
+            this.tbNomeCTLE.Location = new System.Drawing.Point(81, 33);
             this.tbNomeCTLE.Margin = new System.Windows.Forms.Padding(2);
             this.tbNomeCTLE.Name = "tbNomeCTLE";
-            this.tbNomeCTLE.Size = new System.Drawing.Size(188, 22);
+            this.tbNomeCTLE.Size = new System.Drawing.Size(198, 22);
             this.tbNomeCTLE.TabIndex = 2;
-            // 
-            // btAlterarCTLE
-            // 
-            this.btAlterarCTLE.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btAlterarCTLE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btAlterarCTLE.FlatAppearance.BorderSize = 0;
-            this.btAlterarCTLE.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAlterarCTLE.Location = new System.Drawing.Point(182, 182);
-            this.btAlterarCTLE.Margin = new System.Windows.Forms.Padding(2);
-            this.btAlterarCTLE.Name = "btAlterarCTLE";
-            this.btAlterarCTLE.Size = new System.Drawing.Size(97, 32);
-            this.btAlterarCTLE.TabIndex = 4;
-            this.btAlterarCTLE.Text = "Alterar";
-            this.btAlterarCTLE.UseVisualStyleBackColor = false;
-            this.btAlterarCTLE.Click += new System.EventHandler(this.btAlterarCTLE_Click);
             // 
             // Ex27
             // 
@@ -676,6 +710,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbNomeCTLE;
+        private System.Windows.Forms.Button btAlterarST;
+        private System.Windows.Forms.Button btAlterarCTL;
         private System.Windows.Forms.Button btAlterarCTLE;
     }
 }

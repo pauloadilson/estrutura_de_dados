@@ -135,7 +135,8 @@ namespace _001_Pilhas
         private void btConsultarCTL_Click(object sender, EventArgs e)
         {
             int idade = Convert.ToInt32(tbIdadeCTL.Text);
-            int pos = BuscaLinear(idade);
+            string nome = tbNomeCTL.Text;
+            int pos = BuscaLinear(idade,nome);
             if (vetorCTL[pos].idade != 0 && pos >= 0)
             {
                 tbNomeCTL.Text = vetorCTL[pos].nome;
@@ -144,11 +145,12 @@ namespace _001_Pilhas
             else
                 MessageBox.Show(msgNaoEncontrado);
         }
-        int BuscaLinear(int chave)
+
+        int BuscaLinear(int idade, string nome)
         {
             int flag = 0;
-            int pos = Hash(chave);
-            while (vetorCTL[pos].idade == 0 || vetorCTL[pos].idade != chave)
+            int pos = Hash(idade);
+            while (vetorCTL[pos].idade == 0 || vetorCTL[pos].nome != nome)
             {
                 pos++;
                 pos = pos % N;
@@ -158,6 +160,25 @@ namespace _001_Pilhas
             }
             return pos;
         }
+        //alterar
+        private void btAlterarCTL_Click(object sender, EventArgs e)
+        {
+            int nota = Convert.ToInt32(tbIdadeCTL.Text);
+            string nome = tbNomeCTL.Text;
+            int pos = BuscaLinear(nota, nome);
+            if (vetorCTL[pos].idade != 0 && pos >= 0)
+            {
+                vetorCTL[pos].nome = tbNomeCTL.Text;
+                vetorCTL[pos].sexo = cbSexoCTL.SelectedItem.ToString();
+            }
+            else
+                MessageBox.Show(msgNaoEncontrado);
+            tbIdadeCTL.Clear();
+            tbNomeCTL.Clear();
+            cbSexoCTL.SelectedIndex = -1;
+            tbIdadeCTL.Focus();
+        }
+
         //exibir
         private void btExibirCTL_Click(object sender, EventArgs e)
         {
@@ -224,6 +245,7 @@ namespace _001_Pilhas
             if (atual != null)
             {
                 cbSexoCTLE.SelectedItem = atual.sexo;
+                tbNomeCTLE.Text = atual.nome;
             }
             else
                 MessageBox.Show(msgNaoEncontrado);
@@ -234,7 +256,7 @@ namespace _001_Pilhas
             foreach (tp_reg_enc pessoa in vetorCTLE)
             {
                 atual = pessoa;
-                if (atual.idade != idade)
+                if (atual == null || atual.idade != idade)
                     continue;
                 while (atual != null && atual.nome != nome) 
                 {
@@ -271,7 +293,6 @@ namespace _001_Pilhas
             lbResultadoCTLE.Items.Clear();
             ExibirCTLE();
         }
-
 
         void ExibirCTLE()
         {
