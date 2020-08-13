@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="ed.css">
+    <title>Exercícios</title>
+    <style>
+        @media screen and (max-width: 800px) {
+            .container,
+            header,
+            nav {
+                width: 800px;
+            }
+        }
+    </style>
+    <script src="stack.js"></script>
+
+</head>
+
+<body>
+    <div class=container>
+        <header>
+            <div>
+                <h2>Exercícios de Estrutura de Dados</h2>
+            </div>
+        </header>
+        <section>
+            <article>
+                <table>
+                    <tr>
+                        <td>
+                            <form action="" method="GET">
+                                <fieldset id='tab1'>
+                                    <legend>Exercício 02: Converte para binário</legend>
+                                    <table id='tab1'>
+                                        <tr>
+                                            <td>
+                                                <label for="nuser"> Número decimal: </label>
+                                                <input type="number" id=numDec name="numDec" value="20" size=50 required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="button" id=procBin name="procBin" value="Processa" size=50 onclick="processaEx02()">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="suser2"> Número binário: </label>
+                                                <input type="text" id=numBin name="numBin" value="" size=50><br></td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </form>
+                            <script>
+                                var n2 = document.querySelector("#numDec");
+                                var b2 = document.querySelector("#numBin");
+
+                                function processaEx02() {
+                                    var pilhaEx02 = new Stack();
+                                    var NumDec = n2.value;
+                                    var NumBin2 = '';
+
+                                    while (NumDec != 0) {
+                                        pilhaEx02.push(NumDec % 2);
+                                        NumDec = parseInt(NumDec / 2); //converte o conteúdo interno para inteiro
+                                    }
+                                    while (!pilhaEx02.empty()) {
+                                        NumBin2 += String(pilhaEx02.pop());
+                                    }
+                                    b2.value = NumBin2;
+                                    //NumBin2 = '';
+                                }
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <form action="" method="GET">
+                                <fieldset id='tab2'>
+                                    <legend>Exercício 03 : Permutação</legend>
+                                    <table id='tab2'>
+                                        <tr>
+                                            <td>
+                                                <label for="nPerm"> N: </label>
+                                                <input type="number" id=nPerm name="nPerm" value="3" size=50 required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="opPerm"> Opera: </label>
+                                                <input type="text" id=opPerm name="opPerm" value="EEDEDD" size=50 required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="button" id=procPerm name="procPerm" value="Processa" size=50 onclick="processaEx03()">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="resPerm"> Resultado: </label>
+                                                <input type="text" id=resPerm name="resPerm" value="" size=50><br></td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </form>
+                            <script>
+                                var n3 = document.querySelector("#nPerm");
+                                var op3 = document.querySelector("#opPerm");
+                                var res3 = document.querySelector("#resPerm");
+
+                                function processaEx03() {
+                                    var pilhaEx03 = new Stack();
+                                    var Opera = op3.value;
+                                    var fraseOI = '';
+                                    var i = 1;
+
+                                    for (const l of Opera) {
+                                        if (l == 'E') {
+                                            pilhaEx03.push(i);
+                                            i++;
+                                        } else if (l == 'D') {
+                                            fraseOI += String(pilhaEx03.pop())
+                                        }
+                                    }
+                                    res3.value = fraseOI;
+                                    fraseOI = '';
+                                }
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form action="" method="GET">
+                                <fieldset id='tab3'>
+                                    <legend>Exercício 04 : Frase de Palavras Invertidas </legend>
+                                    <table id='tab3'>
+                                        <tr>
+                                            <td>
+                                                <label for="fraseOD"> Frase: </label>
+                                                <input type="text" id=fraseOD name="fraseOD" value="Paulo Adilson da Silva" size=50 required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="button" id=procOD name="procOD" value="Processa" size=50 onclick="processaEx04()">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="fraseOI"> Frase com palavras invertidas:: </label>
+                                                <input type="text" id=fraseOI name="fraseOI" value="" size=50><br></td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </form>
+                            <script>
+                                var fOD4 = document.querySelector("#fraseOD");
+                                var fOI4 = document.querySelector("#fraseOI");;
+
+                                function processaEx04() {
+                                    var pilhaEx04 = new Stack();
+                                    var fraseOD = fOD4.value;
+                                    var fraseOI = '';
+
+                                    for (const l of fraseOD) {
+                                        if (l != ' ')
+                                            pilhaEx04.push(l);
+                                        else {
+                                            while (!pilhaEx04.empty()) {
+                                                fraseOI += pilhaEx04.pop();
+                                            }
+                                            fraseOI += ' '; 
+                                        }
+                                         
+                                    }
+                                    while (!pilhaEx04.empty()) {
+                                        fraseOI += pilhaEx04.pop()
+                                    }
+                                    fOI4.value = fraseOI;
+                                    //fraseOI = '';
+                                }
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form action="" method="GET">
+                                <fieldset id='tab4'>
+                                    <legend>Exercício 05 : Analisa a expressão </legend>
+                                    <table id='tab4'>
+                                        <tr>
+                                            <td>
+                                                <label for="expr_in"> Expressão: </label>
+                                                <input type="text" id=expr_in name="expr_in" value="a = b + (c -d) * (e – f)" size=50 required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="button" id=BTexpr name="BTexpr" value="Processa" size=50 onclick="processaEx05()">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label id="l_res_expr"> Resultado </label>
+                                                <!--<label id="l_res_expr2"> Muda </label>-->
+                                                </td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </form>
+                            <script>
+                                //var pilhaEx05 = new Stack();
+                                var expr_in = document.querySelector("input#expr_in");
+                                var l_res_expr = document.querySelector("label#l_res_expr");
+                                //var l_res_expr2 = document.querySelector("label#l_res_expr2");
+
+                                function processaEx05() {
+                                    var pilhaEx05 = new Stack();
+                                    var expr_entrada = expr_in.value;
+                                    var result = 1;
+                                    //var expr_res = '';
+
+                                    for (const c of expr_entrada) {
+                                        switch (c) {
+                                            case '(':
+                                            case '[':
+                                            case '{':
+                                                pilhaEx05.push(c)
+                                                break
+                                            case ')':
+                                                result = (pilhaEx05.pop() == '(') ? 1 : 0
+                                                break
+                                            case ']':
+                                                result = (pilhaEx05.pop() == '[') ? 1 : 0
+                                                break
+                                            case '}':
+                                                result = (pilhaEx05.pop() == '{') ? 1 : 0
+                                                break
+                                            default:
+                                                result = 1
+                                                d = c
+                                                break
+                                        }
+                                        if (result == 0) {
+                                            break
+                                        }
+                                    }
+                                    l_res_expr.innerHTML = (pilhaEx05.empty() && result == 1) ? "Bem formulada": "Mal formulada"
+                                    //l_res_expr2.innerHTML = `${result} + ${d}` 
+                                }
+                            </script>
+                        </td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#tab1">Exercício 2</a></li>
+                <li><a href="#tab2">Exercício 3</a></li>
+                <li><a href="#tab3">Exercício 4</a></li>
+                <li><a href="#tab4">Exercício 5</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <p>Trabalho Avaliativo do aluno Paulo Adilson da Silva para a disciplina "Programação em Microinformática", com a Profa. LUCIANA SALESI
+                <p>
+        </footer>
+    </div>
+</body>
+
+</html>
