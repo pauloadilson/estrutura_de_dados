@@ -35,8 +35,6 @@ namespace _001_Pilhas
             if (l != null) no.prox = l;
             l = no;
         }
-        // Evento clique botão insere
-
         private void BTInsere_Click(object sender, EventArgs e)
         {
             tp_no no = new tp_no(); //alocar memória, cria uma instância

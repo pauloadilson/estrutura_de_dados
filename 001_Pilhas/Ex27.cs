@@ -20,7 +20,7 @@ namespace _001_Pilhas
             InicializaCTLE(ref vetorCTLE);
         }
         const string msgNaoEncontrado = "Registro não encontrado!";
-        const int N = 5;
+        const int N = 23;
         // Organização dos dados
         int Hash(int chave)
         {
@@ -92,16 +92,20 @@ namespace _001_Pilhas
         }
         void ExibirST()
         {
+            int i = 0;
             foreach (tp_reg pessoa in vetorST)
             {
                 if (pessoa.idade != 0)
                 {
+                    lbRelatorioST.Items.Add($" Posição: {i}.");
                     lbRelatorioST.Items.Add($" Idade: {pessoa.idade} anos.");
                     lbRelatorioST.Items.Add($" Nome: {pessoa.nome}.");
                     lbRelatorioST.Items.Add($" Sexo: {pessoa.sexo}.");
                     lbRelatorioST.Items.Add(" ");
                 }
+                i++;
             }
+
         }
 
         ///com tratamento linear
@@ -186,15 +190,18 @@ namespace _001_Pilhas
         }
         void ExibirCTL()
         {
+            int i = 0;
             foreach (tp_reg pessoa in vetorCTL)
             {
                 if (pessoa.idade != 0)
                 {
+                    lbResultadoCTL.Items.Add($" Posição: {i}.");
                     lbResultadoCTL.Items.Add($" Idade: {pessoa.idade} anos.");
                     lbResultadoCTL.Items.Add($" Nome: {pessoa.nome}.");
                     lbResultadoCTL.Items.Add($" Sexo: {pessoa.sexo}.");
                     lbResultadoCTL.Items.Add(" ");
                 }
+                i++;
             }
         }
         ///com tratamento lista encadeada

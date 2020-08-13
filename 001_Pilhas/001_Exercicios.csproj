@@ -208,6 +208,12 @@
     <Compile Include="Ex24.Designer.cs">
       <DependentUpon>Ex24.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProvaListaEncadeada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvaListaEncadeada.Designer.cs">
+      <DependentUpon>ProvaListaEncadeada.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProvaRecursividade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -298,6 +304,9 @@
     </Compile>
     <EmbeddedResource Include="ProvaFila.resx">
       <DependentUpon>ProvaFila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProvaListaEncadeada.resx">
+      <DependentUpon>ProvaListaEncadeada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProvaPilha.resx">
       <DependentUpon>ProvaPilha.cs</DependentUpon>

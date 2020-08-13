@@ -233,5 +233,17 @@ namespace _001_Pilhas
         {
             Application.Run(new Ex27());
         }
+
+        private void btProvaListaEncadeada_Click(object sender, EventArgs e)
+        {
+            nt = new Thread(ProvaLE);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+
+        }
+        private void ProvaLE()
+        {
+            Application.Run(new ProvaListaEncadeada());
+        }
     }
 }
