@@ -16,10 +16,6 @@ namespace _001_Pilhas
         {
             InitializeComponent();
         }
-        private void recebeDecimal_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         const int MAX = 50;
         struct tp_pilha
